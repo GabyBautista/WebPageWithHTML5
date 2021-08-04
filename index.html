@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blog Application</title>
+    <style>
+          *{
+scroll-behavior:  smooth;
+}
+       body{
+         margin:0;
+         padding:0;
+         background: url(https://wallpaperstock.net/wallpapers/thumbs1/12718wide.jpg);
+         background-size: cover;
+       }
+      .header{
+        background-color: black;
+        text-align:center;
+        height: 45px;
+
+      }
+      .header-title{
+        font-size: 21px;
+        padding:14px;
+        color:white;
+        font-weight: 600;
+        font-family: "Verdana";
+      }
+    nav{
+      transform:translateY(-10px);
+    }
+    .header-title:hover{
+      background-color:gold;
+      transition: .5s;
+      border-radius: 5px 5px 5px 5px;
+    }
+
+
+      .menu{
+        text-decoration:none;
+
+      }
+      .title-gallery, h2{
+        text-align:center;
+        font-family: "Verdana";
+        color:white;
+      }
+      .gallery{
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .gallery-item{
+        width: 400px;
+        height: 250px;
+        border-radius: 4px 4px 4px 4px;
+        filter: saturate(1.2) contrast(1.2);
+
+        }
+        .thumb:hover{
+          transition:0.5s;
+          transform: scale(0.9);
+        }
+      .image-title{
+        text-align:center;
+        background-color:white;
+        height: 50px;
+        transform: translateY(-23px);
+        font-size:20px;
+        font-family: Monospace;
+      }
+      .thumb{
+        padding: 7px;
+      }
+      .footer-info{
+        width:100%;
+        height: 60px;
+        background-color:black;
+      }
+      .copyright{
+        color: gold;
+        font-size: 14px;
+        text-align:center;
+        transform: translateY(20px);
+        font-style: italic;
+        font-family: "Verdana";
+        font-weight: 600;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="header"><br>
+      <nav>
+      <a class="menu"  href="#gallery-box"><span class="header-title">TRIPS</span></a>
+      <a class="menu" href="about.html"><span class="header-title">ABOUT</span></a>
+      <a class="menu" href="contact.html"><span class="header-title">CONTACT</span></a>
+      </nav>
+    </div>
+    <div class="background">
+    <img src="img/header.jpg" width="100%" height="500" alt="paisaje-de-montañas" style="filter: saturate(1.2) contrast(1.2);">
+    </div>
+    <div class="title-gallery" id="gallery-box">
+      <h2>My Travel Diary</h2>
+    </div>
+    <div class="grid-gallery">
+      <table class="gallery">
+        <tr>
+          <td>
+            <div class="thumb">
+            <a href="salta.html"><img class="gallery-item" src="img/cafayate.jpg" alt="cafayate"></a><p class="image-title">Cafayate, Salta</p>
+          </div>
+          </td>
+          <td>
+            <div class="thumb">
+              <a href="jujuy.html"><img class="gallery-item" src="img/7colores.jpg" alt="7colores"></a><p class="image-title">Cerro 7 Colores, Jujuy</p>
+                </div>
+                </td>
+          <td>
+            <div class="thumb">
+            <a href="neuquen.html"><img class="gallery-item" src="img/angostura.jpg" alt="angostura"></a><p class="image-title">Villa La Angostura, Neuquen</p>
+            </div>
+            </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="thumb">
+              <a href="mendoza.html"><img class="gallery-item" src="img/potrerillos.jpg" alt="potrerillos"></a><p class="image-title">Potrerillos, Mendoza</p>
+            </div>
+          </td>
+          <td>
+            <div class="thumb">
+              <a href="sanjuan.html"><img class="gallery-item" src="img/valledeluna.jpg" alt="valledeluna"></a><p class="image-title">Valle De La Luna, San Juan</p>
+            </div>
+          </td>
+          <td>
+            <div class="thumb">
+              <a href="catamarca.html"><img class="gallery-item" src="img/piedrapomez.jpg" alt="piedrapomez"></a><p class="image-title">Campo Piedra Pomez, Catamarca</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+    </div>
+    <footer>
+      <div class="footer-info">
+        <p class="copyright">Pagina construida con HTML5 puro. El contenido es meramente demostrativo sin ningun tipo de fin informativo. Realizada y codificada por Gabriel Bautista.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
